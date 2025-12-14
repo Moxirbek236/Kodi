@@ -2,7 +2,7 @@
 import xbmcplugin, xbmcgui, sys, json, urllib.request
 
 HANDLE=int(sys.argv[1])
-data=json.loads(urllib.request.urlopen("http://192.168.1.50:3000/api/movies").read())
+data = json.loads(urllib.request.urlopen("https://kodi-lf7y.onrender.com/api/movies").read())
 
 for m in data:
  li=xbmcgui.ListItem(label=m['title'])
