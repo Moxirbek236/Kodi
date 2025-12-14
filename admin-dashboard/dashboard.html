@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Add Movie (URL)</h2>
+<input id="title" placeholder="title">
+<input id="url" placeholder="video url">
+<button onclick="add()">Add</button>
+<script>
+async function add(){
+ await fetch('/api/movies',{method:'POST',
+ headers:{'Content-Type':'application/json','Authorization':'Bearer '+localStorage.token},
+ body:JSON.stringify({title:title.value,url:url.value})});
+ alert('added');
+}
+</script>
+</body>
+</html>

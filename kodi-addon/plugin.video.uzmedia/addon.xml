@@ -1,0 +1,14 @@
+
+<addon id="plugin.video.uzmedia" name="UzMedia" version="1.0.0" provider-name="UzMedia Team">
+ <requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+ </requires>
+ <extension point="xbmc.python.pluginsource" library="default.py">
+  <provides>video</provides>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+  <summary lang="en">UzMedia Video Plugin</summary>
+  <description lang="en">Watch UzMedia videos from your Kodi.</description>
+  <platform>all</platform>
+ </extension>
+</addon>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.uzmedia" name="UzMedia" version="1.0.0" provider-name="UzMedia Team">
+ <requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+ </requires>
+ <extension point="xbmc.python.pluginsource" library="default.py">
+  <provides>video</provides>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+  <summary lang="en">UzMedia Video Plugin</summary>
+  <description lang="en">Watch UzMedia videos from your Kodi.</description>
+  <platform>all</platform>
+ </extension>
+</addon>
+<addon id="repository.uzmedia" name="UzMedia Repository" version="1.0.0" provider-name="UzMedia Team">
+ <extension point="xbmc.addon.repository" name="UzMedia Repository">
+  <info compressed="false">https://raw.githubusercontent.com/yourusername/yourrepo/master/addons.xml</info>
+  <checksum>https://raw.githubusercontent.com/yourusername/yourrepo/master/addons.xml.md5</checksum>
+  <datadir zip="true">https://raw.githubusercontent.com/yourusername/yourrepo/master/</datadir>
+ </extension>
+ <extension point="xbmc.addon.metadata">
+  <summary lang="en">UzMedia Repository</summary>
+  <description lang="en">Repository for UzMedia addons</description>
+  <platform>all</platform>
+ </extension>
+</addon>
+</addons>
